@@ -1,0 +1,9 @@
+body{
+ display: flex;
+ justify-content: center;   
+}
+.square{
+    outline: solid 2px red;
+    height: 1em;
+    width: 1em;
+}
