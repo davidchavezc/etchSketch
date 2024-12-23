@@ -3,7 +3,7 @@ body{
  justify-content: center;   
 }
 .square{
-    outline: solid 2px red;
-    height: 1em;
-    width: 1em;
+    outline: solid 1px rgb(28, 28, 28);
+    height: 20px;
+    width: 20px;
 }
