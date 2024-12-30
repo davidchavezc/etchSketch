@@ -1,9 +1,17 @@
 body{
  display: flex;
  justify-content: center;   
+ align-items: center;
 }
 .square{
     outline: solid 1px rgb(28, 28, 28);
-    height: 20px;
-    width: 20px;
+    height: 2em;
+    width: 2em;
+}
+#gridContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 32em;
+    height: 32em;
+    outline: solid 2px rgb(0, 174, 255);
 }
