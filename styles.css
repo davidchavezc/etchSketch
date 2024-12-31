@@ -1,10 +1,11 @@
 body{
  display: flex;
+ flex-direction: column;
  justify-content: center;   
  align-items: center;
 }
 .square{
-    outline: solid 1px rgb(28, 28, 28);
+    outline: solid 1px #3939394e;
     height: 2em;
     width: 2em;
 }
