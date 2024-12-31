@@ -16,3 +16,6 @@ body{
     height: 32em;
     outline: solid 2px rgb(0, 174, 255);
 }
+.hovered{
+    background-color: #000000;
+}
