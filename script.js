@@ -10,3 +10,10 @@ function drawSquares(area){
 }
 
 drawSquares(gridArea);
+
+const squares = document.querySelectorAll('.square')
+squares.forEach((square) => {
+    square.addEventListener('mouseover', () => {
+        square.classList.add('hovered');
+    })
+})
