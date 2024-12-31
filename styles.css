@@ -6,8 +6,9 @@ body{
 }
 .square{
     outline: solid 1px #3939394e;
-    height: 2em;
-    width: 2em;
+    box-sizing: border-box;
+    flex: 1 0 calc(100% / 16);
+    height: calc(100% / 16);
 }
 #gridContainer{
     display: flex;
