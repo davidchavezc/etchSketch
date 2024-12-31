@@ -3,6 +3,7 @@ body{
  flex-direction: column;
  justify-content: center;   
  align-items: center;
+ font-family: 'Open Sans';
 }
 .square{
     outline: solid 1px #3939394e;
@@ -19,4 +20,12 @@ body{
 }
 .hovered{
     background-color: #000000;
+}
+.sliderContainer{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+}
+#sliderLabel{
+    text-align: center;
 }
