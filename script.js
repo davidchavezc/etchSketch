@@ -1,5 +1,6 @@
 const grid = document.querySelector("#gridContainer");
-let gridSize = 16;
+const sizePicker = document.querySelector('#sizeSlider')
+let gridSize = sizePicker.value;
 let gridArea = gridSize**2;
 function drawSquares(area){
     for(i = 1; area >= i; i++){
@@ -10,10 +11,16 @@ function drawSquares(area){
 }
 
 drawSquares(gridArea);
-
 const squares = document.querySelectorAll('.square')
 squares.forEach((square) => {
     square.addEventListener('mouseover', () => {
         square.classList.add('hovered');
     })
 })
+
+sizePicker.addEventListener('input', () => {
+    let gridSize = sizePicker.value;
+    console.log(gridSize);
+    let gridArea = gridSize**2;
+    drawSquares(gridArea);
+});
