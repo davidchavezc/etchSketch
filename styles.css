@@ -9,9 +9,11 @@ body{
     background-color: #1b1b1bc1;
 }
 .square{
-    outline: solid 1px #3939394e;
     flex: 2em;
     height: 2em;
+}
+.outline{
+    outline: solid 1px #3939394e;
 }
 #grid{
     display: flex;
