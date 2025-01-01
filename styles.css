@@ -21,10 +21,30 @@ body{
     outline: solid 2px rgb(0, 174, 255);
 }
 .sliderContainer{
-    margin-top: 2em;
+    margin: auto auto;
     display: flex;
     flex-direction: column;
+
 }
 #sliderLabel{
     text-align: center;
+}
+.options{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    margin: 2em;
+}
+button{
+    margin: auto auto;
+    font-size: 1em;
+    padding: 0.1em 1em;
+    outline: solid #3eb2ff 2px;
+    border-style: none;
+    transition: box-shadow 0.5s, background-color 0.5s;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #ffffffec;
+    box-shadow: 0 0 0.5em #3eb2ff;
 }

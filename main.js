@@ -1,5 +1,6 @@
-const grid = document.querySelector('#grid')
-const slider = document.querySelector('#slider')
+const grid = document.querySelector('#grid');
+const slider = document.querySelector('#slider');
+const clear = document.querySelector('#clearButton');
 
 slider.addEventListener('input', () => {
     grid.innerHTML = '';
@@ -26,3 +27,10 @@ function drawSquares(area, size) {
     });
 }
 
+clear.addEventListener('click', () => {
+    grid.innerHTML = '';
+    let gridSize = slider.value;
+    let gridArea = gridSize**2;
+    drawSquares(gridArea, gridSize);
+})
+drawSquares(256, 16);
