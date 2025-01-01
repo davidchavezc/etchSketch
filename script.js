@@ -1,5 +1,5 @@
 const grid = document.querySelector("#gridContainer");
-const sizePicker = document.querySelector('#sizeSlider')
+const slider = document.querySelector('#sizeSlider')
 const squares = document.querySelectorAll('.square')
 let gridSize = sizePicker.value;
 let gridArea = gridSize**2;
@@ -8,13 +8,13 @@ function drawSquares(area, size){
         const square = document.createElement("div");
         square.classList.add("square");
         grid.appendChild(square);
-        const squares = document.querySelectorAll('.square')
-        squares.forEach(square => {
-            square.style.flex = `1 0 calc(100% / ${size})`
-            square.style.height = `calc(100% / ${size})`
-            console.log(square.style.flex);
-        });
     }
+    const squares = document.querySelectorAll('.square')
+    squares.forEach(square => {
+        square.style.flex = `1 0 calc(100% / ${size})`
+        square.style.height = `calc(100% / ${size})`
+        console.log(square.style.flex);
+    });
 }
 
 drawSquares(gridArea);
