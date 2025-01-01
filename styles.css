@@ -5,20 +5,20 @@ body{
  align-items: center;
  font-family: 'Open Sans';
 }
+.hovered{
+    background-color: #1b1b1bc1;
+}
 .square{
     outline: solid 1px #3939394e;
     flex: 2em;
     height: 2em;
 }
-#gridContainer{
+#grid{
     display: flex;
     flex-wrap: wrap;
     width: 32em;
     height: 32em;
     outline: solid 2px rgb(0, 174, 255);
-}
-.hovered{
-    background-color: #1b1b1bc1;
 }
 .sliderContainer{
     margin-top: 2em;
