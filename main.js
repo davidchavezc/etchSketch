@@ -26,10 +26,18 @@ function drawSquares(area, size) {
     });
     squares.forEach((square) => {
         square.addEventListener('mouseover', () => {
-            square.style.backgroundColor = brushColor;
+            if(mouseDown){
+                square.style.backgroundColor = brushColor;
+            }
         })
     });
 }
+grid.addEventListener('mousedown', () => {
+    mouseDown = true;
+});
+grid.addEventListener('mouseup', () => {
+    mouseDown = false;
+});
 
 clear.addEventListener('click', () => {
     grid.innerHTML = '';
