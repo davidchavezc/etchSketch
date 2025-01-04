@@ -6,7 +6,7 @@ body{
  font-family: 'Open Sans';
 }
 .hovered{
-    background-color: #1b1b1bc1;
+    background-color: #1b1b1b;
 }
 .square{
     flex: 2em;
@@ -22,7 +22,8 @@ body{
     height: 32em;
     outline: solid 2px rgb(0, 174, 255);
 }
-.sliderContainer{
+.sliderContainer,
+.colorContainer {
     margin: auto auto;
     display: flex;
     flex-direction: column;
@@ -37,16 +38,23 @@ body{
     align-items: center;
     margin: 2em;
 }
-button{
+.option{
     margin: auto auto;
     font-size: 1em;
     padding: 0.1em 1em;
     outline: solid #3eb2ff 2px;
     border-style: none;
-    transition: box-shadow 0.5s, background-color 0.5s;
+    transition: box-shadow 0.5s, background-color 0.5s, color 0.5s; 
 }
-button:hover{
+.option:hover{
     cursor: pointer;
     background-color: #ffffffec;
     box-shadow: 0 0 0.5em #3eb2ff;
+    color:rgb(84, 84, 84);
+}
+#colorPicker{
+    margin: 0em;
+    padding: 0em;
+    width: 2em;
+    height: 2em;
 }

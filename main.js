@@ -2,6 +2,8 @@ const grid = document.querySelector('#grid');
 const slider = document.querySelector('#slider');
 const clear = document.querySelector('#clearButton');
 const showGrid = document.querySelector('#toggleGrid');
+const colorPicker = document.querySelector('#colorPicker');
+
 let gridShown = 0;
 slider.addEventListener('input', () => {
     grid.innerHTML = '';
@@ -24,7 +26,7 @@ function drawSquares(area, size) {
     });
     squares.forEach((square) => {
         square.addEventListener('mouseover', () => {
-            square.classList.add('hovered');
+            square.style.backgroundColor = brushColor;
         })
     });
 }
@@ -51,4 +53,10 @@ showGrid.addEventListener('click', () => {
         });
     }
 });
+
+colorPicker.addEventListener('input', () => {
+    brushColor = colorPicker.value;
+})
+
+let brushColor = colorPicker.value;
 drawSquares(256, 16);
