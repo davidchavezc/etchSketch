@@ -25,6 +25,9 @@ function drawSquares(area, size) {
         square.style.height = `calc(100% / ${size})`
     });
     squares.forEach((square) => {
+        square.addEventListener('click', () => {
+            square.style.backgroundColor = brushColor;
+        })
         square.addEventListener('mouseover', () => {
             if(mouseDown){
                 square.style.backgroundColor = brushColor;
