@@ -32,10 +32,14 @@ function drawSquares(area, size) {
         })
     });
 }
+/* Document is used instead of grid for mouseup to
+ensure that when the mouse is released even outside the grid
+it stops painting
+*/
 grid.addEventListener('mousedown', () => {
     mouseDown = true;
 });
-grid.addEventListener('mouseup', () => {
+document.addEventListener('mouseup', () => {
     mouseDown = false;
 });
 
