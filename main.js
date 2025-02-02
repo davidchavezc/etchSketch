@@ -16,6 +16,7 @@ function drawSquares(area, size) {
     for(i = 1; area >= i; i++){
         const square = document.createElement('div');
         square.classList.add('square');
+        square.setAttribute('draggable', 'false');
         if(gridShown)square.classList.add('outline');
         grid.appendChild(square);
     }
